@@ -1,10 +1,11 @@
 ﻿using System;
 namespace NeedForSpeed
 {
-    public class Car
+    public class Car: Vehicle
     {
-        public Car()
+        public Car(int horsePower, double fuel) : base(horsePower, fuel)
         {
         }
+        
     }
 }
