@@ -1,9 +1,9 @@
 ﻿using System;
 namespace NeedForSpeed
 {
-    public class CrossMotorcycle
+    public class CrossMotorcycle : Motorcycle
     {
-        public CrossMotorcycle()
+        public CrossMotorcycle(int horsePower, double fuel) : base(horsePower, fuel)
         {
         }
     }

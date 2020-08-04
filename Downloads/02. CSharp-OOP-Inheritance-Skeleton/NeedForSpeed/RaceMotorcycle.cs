@@ -1,10 +1,11 @@
 ﻿using System;
 namespace NeedForSpeed
 {
-    public class RaceMotorcycle
+    public class RaceMotorcycle: Motorcycle
     {
-        public RaceMotorcycle()
+        public RaceMotorcycle(int horsePower, double fuel) : base(horsePower, fuel)
         {
+            DefaultFuelConsumption = 8;
         }
     }
 }

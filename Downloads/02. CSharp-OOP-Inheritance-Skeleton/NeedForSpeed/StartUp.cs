@@ -11,6 +11,12 @@ namespace NeedForSpeed
 
             Car car = new Car(100, 10);
             Console.WriteLine(car.Drive(100));
+
+            RaceMotorcycle raceMotorcycle = new RaceMotorcycle(100, 10);
+            Console.WriteLine(raceMotorcycle.Drive(100));
+
+            Console.ReadKey();
+
         }
     }
 }

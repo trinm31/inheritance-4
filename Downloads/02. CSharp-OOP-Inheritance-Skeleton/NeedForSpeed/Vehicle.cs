@@ -8,15 +8,13 @@ namespace NeedForSpeed
         public double DefaultFuelConsumption;
         public double FuelConsumption;
 
-        public Vehicle(int horsePower, double fuel)
+        public Vehicle(int horsePower, double fuel )
         {
             this.HorsePower = horsePower;
             this.Fuel = fuel;
+            this.DefaultFuelConsumption = 1.25;
         }
-        public Vehicle(double defaultFuelConsumption)
-        {
-            this.DefaultFuelConsumption = defaultFuelConsumption;
-        }
+       
         public double LitPerHour()
         {
             return (Fuel * HorsePower) / DefaultFuelConsumption;
